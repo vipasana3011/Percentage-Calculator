@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pink Percentage Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="calculator">
+    <div class="title">Percentage Calculator</div>
+
+    <!-- Section 1: What is X% of Y -->
+    <div class="section">
+      <div class="input-group">
+        <span>What is</span>
+        <input type="number" id="percent1" placeholder="%" />
+        <span>% of</span>
+        <input type="number" id="number1" placeholder="Number" />
+        <button onclick="calculatePercentOf()">Calculate</button>
+        <span class="result" id="result1">--</span>
+      </div>
+    </div>
+
+    <!-- Section 2: X is what % of Y -->
+    <div class="section">
+      <div class="input-group">
+        <input type="number" id="valueX" placeholder="Value X" />
+        <span>is what % of</span>
+        <input type="number" id="valueY" placeholder="Value Y" />
+        <button onclick="calculateWhatPercent()">Calculate</button>
+        <span class="result" id="result2">--%</span>
+      </div>
+    </div>
+
+    <div class="footer">Made with 💖 by Vipasana </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
